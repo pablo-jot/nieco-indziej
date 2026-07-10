@@ -1,3 +1,4 @@
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import { loadLogo } from "./components/logo.js";
 
 await loadLogo(
