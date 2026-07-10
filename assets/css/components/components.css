@@ -8,6 +8,7 @@
     height: auto;
 
 }
+
 /* =====================================================
    MENU GŁÓWNE
    ===================================================== */
@@ -37,5 +38,57 @@
 .main-menu {
 
     margin-left: auto;
+
+}
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo svg {
+
+    width: 72px;
+    height: 72px;
+    display: block;
+
+    transition:
+        transform 0.25s ease,
+        filter 0.25s ease;
+
+}
+
+.logo:hover svg {
+
+    animation: logoPulse 0.45s ease;
+
+}
+
+@keyframes logoPulse {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    45% {
+
+        transform: scale(1.06);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+.logo svg path,
+.logo svg polygon {
+
+    fill: var(--menu-text);
+    transition: fill 0.3s ease;
 
 }
