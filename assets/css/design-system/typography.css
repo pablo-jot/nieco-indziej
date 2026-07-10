@@ -1,0 +1,107 @@
+/*
+========================================================
+Nieco indziej
+Plik        : typography.css
+Opis        : Typografia serwisu
+Autor       : Paweł Janas
+Wersja      : 1.0.0
+Data        : 2026-07-10
+========================================================
+*/
+
+/* =====================================================
+   FONTY
+   ===================================================== */
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/eb-garamond/EBGaramond-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/eb-garamond/EBGaramond-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/eb-garamond/EBGaramond-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/eb-garamond/EBGaramond-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/eb-garamond/EBGaramond-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/eb-garamond/EBGaramond-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* =====================================================
+   ZMIENNE TYPOGRAFICZNE
+   ===================================================== */
+
+:root {
+
+    --font-logo: "EB Garamond", serif;
+    --font-heading: "EB Garamond", serif;
+    --font-body: "EB Garamond", serif;
+
+}
+
+/* =====================================================
+   STYLE PODSTAWOWE
+   ===================================================== */
+
+body {
+
+    font-family: var(--font-body);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: var(--font-heading);
+
+}
+
+nav {
+
+    font-family: var(--font-heading);
+
+}
+
+button {
+
+    font-family: var(--font-heading);
+
+}
+
+blockquote {
+
+    font-family: var(--font-body);
+
+}

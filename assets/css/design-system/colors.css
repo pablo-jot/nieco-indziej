@@ -1,0 +1,79 @@
+/*
+========================================================
+Nieco indziej
+Plik        : variables.css
+Opis        : Zmienne CSS - identyfikacja wizualna
+Autor       : Paweł Janas
+Wersja      : 1.0.0
+Data        : 2026-07-09
+========================================================
+*/
+
+:root {
+
+    /* ==================================================
+       PALETA PODSTAWOWA
+       ================================================== */
+
+    --color-forest-dark:  #222601;
+    --color-forest:       #585928;
+    --color-moss:         #736B02;
+    --color-oak:          #8C8303;
+    --color-parchment:    #D9BFA0;
+
+    /* ==================================================
+       PALETA POMOCNICZA
+       ================================================== */
+
+    --color-stone-light:  #BFB6AA;
+    --color-stone-dark:   #8C7C6D;
+
+    /* ==================================================
+       KOLORY SEMANTYCZNE
+       ================================================== */
+
+    --page-background:    var(--color-parchment);
+
+    --menu-background:    var(--color-forest-dark);
+    --menu-text:          var(--color-parchment);
+
+    --footer-background:  var(--color-forest-dark);
+    --footer-text:        var(--color-parchment);
+
+    --button-background:  var(--color-moss);
+    --button-hover:       var(--color-oak);
+    --button-text:        var(--color-parchment);
+
+    --panel-background:   var(--color-stone-light);
+    --panel-text:         var(--color-forest-dark);
+
+}
+
+/* =====================================================
+   TYPOGRAFIA
+   ===================================================== */
+
+:root {
+
+    /* Rodziny fontów */
+
+    --font-logo: "EB Garamond", serif;
+    --font-heading: "EB Garamond", serif;
+    --font-body: "EB Garamond", serif;
+
+    /* Rozmiary */
+
+    --font-size-small: 1rem;         /* 16 px */
+    --font-size-body: 1.25rem;       /* 20 px */
+
+    --font-size-h3: 1.875rem;        /* 30 px */
+    --font-size-h2: 2.5rem;          /* 40 px */
+    --font-size-h1: 3.5rem;          /* 56 px */
+
+    /* Interlinia */
+
+    --line-height-body: 1.7;
+    --line-height-heading: 1.2;
+    --line-height-quote: 1.5;
+
+}
