@@ -8,3 +8,34 @@
     height: auto;
 
 }
+/* =====================================================
+   MENU GŁÓWNE
+   ===================================================== */
+
+.main-menu ul {
+
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-menu a {
+
+    text-decoration: none;
+    color: var(--menu-text);
+
+    font-family: var(--font-heading);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+
+.main-menu {
+
+    margin-left: auto;
+
+}
