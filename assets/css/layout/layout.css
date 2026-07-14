@@ -105,6 +105,12 @@ main {
 
 }
 
+body.home-page main {
+
+    display: flex;
+
+}
+
 .footer-left,
 .footer-right {
 
