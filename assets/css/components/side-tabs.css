@@ -1,0 +1,194 @@
+/* =====================================================
+   MECHANIZM WYSUWANIA ZAKŁADEK
+
+   UWAGA:
+   Ten komponent zostanie przebudowany od podstaw.
+   Nie modyfikować istniejącego mechanizmu – będzie
+   zastąpiony prostszą wersją.
+
+   ===================================================== */
+
+.side-tabs {
+
+    --tab-width: 259px;
+    --tab-radius: 0px;
+    --tab-duration: 0.45s;
+    --tab-easing: cubic-bezier(0.16, 1, 0.30, 1);
+
+    --tab-height: 64px;
+    --tab-visible: 70px;
+
+    /* odległość ornamentu od prawej krawędzi */
+    --tab-right: 16px;
+
+    /* ile ma się schować */
+    --tab-offset: calc(var(--tab-width) - var(--tab-visible));
+
+    --tab-start: 220px;
+    --tab-gap: 6px;
+    --tab-z-index: 100;
+
+}
+
+.side-tab {
+
+    position: fixed;
+
+    top: calc(var(--tab-start) + var(--tab-index) * (var(--tab-height) + var(--tab-gap)));
+    right: var(--tab-right);
+
+    width: var(--tab-width);
+    height: var(--tab-height);
+
+    z-index: var(--tab-z-index);
+
+    display: block;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+}
+
+.side-tab-inner {
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: var(--tab-width);
+    height: var(--tab-height);
+
+    transform: translateX(var(--tab-offset));
+
+    transition:
+        transform var(--tab-duration) var(--tab-easing);
+
+    will-change: transform;
+
+}
+.side-tab:hover .side-tab-inner,
+.side-tab:focus-visible .side-tab-inner {
+
+    transform: translateX(0);
+
+}
+
+.side-tab:hover,
+.side-tab:focus-visible {
+
+    filter: brightness(1.04);
+
+}
+
+.tab-bg {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .18));
+
+
+}
+
+.tab-ornament {
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: var(--tab-visible);
+    height: var(--tab-height);
+
+    background: url("../../images/decor/ornament.svg") no-repeat 2px center;
+
+    background-size: auto 62px;
+
+}
+
+
+
+.tab-icon {
+
+    position: absolute;
+
+    left: 36px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #222601;
+
+    font-size: 18px;
+
+    z-index: 3;
+
+}
+
+.tab-title {
+
+    position: absolute;
+
+    left: 92px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #222601;
+
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    z-index: 3;
+
+}
+
+.tab-icon i {
+
+    font-size: 20px;
+
+    color: #222601;
+
+}
+
+.tab-1 {
+    --tab-index: 0;
+}
+
+.tab-2 {
+    --tab-index: 1;
+}
+
+.tab-3 {
+    --tab-index: 2;
+}
+
+.tab-4 {
+    --tab-index: 3;
+}
+
+.tab-5 {
+    --tab-index: 4;
+}
+
+
+:root {
+    --color-forest-dark: #222601;
+}

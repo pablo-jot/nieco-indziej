@@ -8,6 +8,11 @@
 
     <title>Nieco indziej</title>
 
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon_16.png">
+    <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+
     <link rel="stylesheet" href="assets/css/design-system/reset.css">
     <link rel="stylesheet" href="assets/css/design-system/variables.css">
     <link rel="stylesheet" href="assets/css/design-system/colors.css">
@@ -22,7 +27,7 @@
 
 </head>
 
-<body>
+<body class="home-page">
 
     <header>
 
@@ -65,27 +70,245 @@
 
     </header>
 
+    <nav class="side-tabs" aria-label="Nawigacja boczna">
+
+    <a href="#" class="side-tab tab-1">
+
+        <div class="side-tab-inner">
+
+            <img src="assets/images/decor/side-tab.svg" alt="" class="tab-bg">
+
+            <div class="tab-ornament"></div>
+
+            <div class="tab-icon">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+
+            <div class="tab-title">
+                O ZESPOLE
+            </div>
+
+        </div>
+
+    </a>
+
+    <a href="#" class="side-tab tab-2">
+
+        <div class="side-tab-inner">
+
+            <img src="assets/images/decor/side-tab.svg" alt="" class="tab-bg">
+
+            <div class="tab-ornament"></div>
+
+            <div class="tab-icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div class="tab-title">
+                MUZYCY
+            </div>
+
+        </div>
+
+    </a>
+
+    <a href="#" class="side-tab tab-3">
+
+        <div class="side-tab-inner">
+
+            <img src="assets/images/decor/side-tab.svg" alt="" class="tab-bg">
+
+            <div class="tab-ornament"></div>
+
+            <div class="tab-icon">
+                <i class="fa-solid fa-music"></i>
+            </div>
+
+            <div class="tab-title">
+                MUZYKA
+            </div>
+
+        </div>
+
+    </a>
+
+    <a href="#" class="side-tab tab-4">
+
+        <div class="side-tab-inner">
+
+            <img src="assets/images/decor/side-tab.svg" alt="" class="tab-bg">
+
+            <div class="tab-ornament"></div>
+
+            <div class="tab-icon">
+                <i class="fa-solid fa-images"></i>
+            </div>
+
+            <div class="tab-title">
+                GALERIA
+            </div>
+
+        </div>
+
+    </a>
+
+    <a href="#" class="side-tab tab-5">
+
+        <div class="side-tab-inner">
+
+            <img src="assets/images/decor/side-tab.svg" alt="" class="tab-bg">
+
+            <div class="tab-ornament"></div>
+
+            <div class="tab-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="tab-title">
+                KONTAKT
+            </div>
+
+        </div>
+
+    </a>
+
+</nav>
+
     <main>
 
-    <section class="hero">
+        <section class="hero">
+            <div class="hero-content">
 
-        <img
-            src="assets/images/hero/hero.jpg"
-            alt="Nieco indziej">
+                <div class="hero-quote">
 
-    </section>
+                    <blockquote class="quote-text">
 
-</main>
+                    </blockquote>
+
+                    <div class="quote-author">
+
+                    </div>
+
+                </div>
+
+                <div class="hero-calendar">
+
+                    <h2>NAJBLIŻSZE KONCERTY</h2>
+
+                    <div class="concert-list">
+
+                        <article class="concert-item">
+
+                            <div class="concert-meta">
+
+                                <strong>15 lipca 2026 r.</strong>
+
+                                <span class="separator">|</span>
+
+                                <span>godz. 20:00</span>
+
+                            </div>
+
+                            <div class="concert-city">
+                                Kraków
+                            </div>
+
+                            <div class="concert-place">
+                                Piwnica pod Baranami
+                            </div>
+
+                        </article>
+
+                        <article class="concert-item">
+
+                            <div class="concert-meta">
+
+                                <strong>18 lipca 2026 r.</strong>
+
+                                <span class="separator">|</span>
+
+                                <span>godz. 19:30</span>
+
+                            </div>
+
+                            <div class="concert-city">
+                                Gdańsk
+                            </div>
+
+                            <div class="concert-place">
+                                Klub Parlament
+                            </div>
+
+                        </article>
+
+                        <article class="concert-item">
+
+                            <div class="concert-meta">
+
+                                <strong>26 lipca 2026 r.</strong>
+
+                                <span class="separator">|</span>
+
+                                <span>godz. 21:00</span>
+
+                            </div>
+
+                            <div class="concert-city">
+                                Poznań
+                            </div>
+
+                            <div class="concert-place">
+                                Blue Note
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <a href="#" class="concert-more">
+                        ZOBACZ WSZYSTKIE →
+                    </a>
+
+                </div>
+                <div class="hero-logo"></div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
 
-    <div class="footer-left"></div>
+        <div class="footer-left"></div>
 
-    <div class="footer-sygnet"></div>
+        <div class="footer-newsletter">
 
-    <div class="footer-right"></div>
+            <h3>ZAPISZ SIĘ DO NEWSLETTERA</h3>
 
-</footer>
+            <form class="newsletter-form">
+
+                <input type="email" placeholder="Twój e-mail">
+
+                <button type="submit">
+                    →
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="footer-sygnet"></div>
+
+        <div class="footer-contact">
+
+            <h3>KONTAKT</h3>
+
+            <p>kontakt@niecoindziej.pl <span>|</span> +48 123 456 789</p>
+
+        </div>
+
+        <div class="footer-right"></div>
+
+    </footer>
     <script type="module" src="assets/js/main.js"></script>
 </body>
 

@@ -1,0 +1,16 @@
+body {
+
+    cursor: url("../../images/kursor/cursor_NI_32.png") 0 0, auto;
+
+}
+
+a,
+button,
+input,
+textarea,
+select,
+[role="button"] {
+
+    cursor: url("../../images/kursor/cursor_NI_hover_32.png") 0 0, pointer;
+
+}

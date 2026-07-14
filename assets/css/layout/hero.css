@@ -1,3 +1,5 @@
+
+
 /* =====================================================
    HERO
    ===================================================== */
@@ -6,19 +8,289 @@
 
     flex: 1;
 
-    display: flex;
+    background-image: url("../../images/hero/hero.jpg");
 
-    margin-top: -96px;
-    padding-top: 96px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    /* margin-top: -96px;
+    padding-top: 96px; */
 
 }
 
-.hero img {
+.hero {
+
+    position: relative;
+
+}
+
+.hero-content {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+.hero-logo {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 750px;
+
+    transform: translate(-50%, -85%);
+
+}
+
+.hero-logo svg {
 
     display: block;
 
     width: 100%;
     height: auto;
-    object-fit: cover;
+
+    filter:
+
+        drop-shadow(0 0 4px var(--menu-background)) drop-shadow(0 0 8px var(--menu-background)) drop-shadow(0 0 12px var(--menu-background));
+
+}
+
+/*.hero-logo svg path {
+
+    fill: var(--menu-text);
+    stroke: var(--menu-text);
+
+}*/
+
+/* =====================================================
+   HERO - KALENDARZ
+   ===================================================== */
+
+.hero-calendar {
+
+    position: absolute;
+
+    top: 150px;
+    left: 40px;
+
+    width: 200px;
+    min-height: 220px;
+
+    padding: 20px;
+
+    background: rgba(31, 36, 3, 0.55);
+
+    border: 1px solid rgba(224, 210, 186, 0.20);
+    border-radius: 12px;
+
+    backdrop-filter: blur(8px);
+
+}
+
+
+/* =====================================================
+   HERO - KALENDARZ TYPOGRAFIA
+   ===================================================== */
+
+.hero-calendar h2 {
+
+    margin: 0 0 14px 0;
+
+    color: var(--menu-text);
+
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+}
+
+.hero-calendar h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 100%;
+
+    height: 1px;
+
+    margin-top: 10px;
+
+    background: var(--menu-text);
+
+    opacity: 0.35;
+
+}
+
+.hero-calendar .concert-item {
+
+    margin-bottom: 20px;
+
+}
+
+.hero-calendar .concert-meta {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 6px;
+
+    color: var(--menu-text);
+
+    font-size: 0.90rem;
+
+}
+
+.hero-calendar .concert-meta strong {
+
+    font-weight: 700;
+
+}
+
+.hero-calendar .concert-meta .separator {
+
+    opacity: 0.45;
+
+}
+
+/*.hero-calendar .concert-date {
+
+    margin-bottom: 6px;
+
+    color: var(--menu-text);
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+}
+
+.hero-calendar .concert-time {
+
+    color: var(--menu-text);
+
+    font-size: 0.90rem;
+
+    opacity: 0.90;
+
+}*/
+
+.hero-calendar .concert-city {
+
+    margin-top: 2px;
+
+    color: var(--menu-text);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.hero-calendar .concert-place {
+
+    margin-top: 2px;
+
+    color: var(--menu-text);
+
+    font-size: 0.88rem;
+
+    opacity: 0.85;
+
+}
+
+.hero-calendar .concert-more {
+
+    display: block;
+
+    margin-top: 18px;
+
+    text-align: right;
+
+    color: var(--menu-text);
+
+    font-size: 0.90rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+
+}
+
+.hero-calendar .concert-more:hover {
+
+    letter-spacing: 0.14em;
+
+    transform: translateX(6px);
+
+}
+
+.hero-quote {
+
+    position: absolute;
+
+    top: 25px;
+    left: 60px;
+
+    width: 320px;
+
+}
+
+.quote-text {
+
+    margin: 0;
+
+    white-space: pre-line;
+
+}
+
+.quote-text {
+
+    color: var(--menu-text);
+
+    font-family: var(--font-heading);
+
+    font-size: 1.35rem;
+
+    font-style: italic;
+
+    line-height: 1.45;
+    text-shadow: 0 0 8px rgba(24, 29, 8, 0.9);
+
+}
+
+.quote-author {
+
+    margin-top: 12px;
+
+    text-align: right;
+
+    color: var(--menu-text);
+
+    font-size: 0.95rem;
+
+    font-family: var(--font-sans);
+
+    font-variant: small-caps;
+
+    letter-spacing: 0.08em;
+
+    text-shadow: 0 0 8px rgba(24, 29, 8, 0.9);
+
+}
+
+.home-page .side-tab {
+
+    right: 0;
 
 }

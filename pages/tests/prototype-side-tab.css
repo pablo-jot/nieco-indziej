@@ -1,0 +1,109 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background: #f5f3ec;
+
+}
+
+.test-area {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding: 60px;
+
+}
+
+.tab-bg {
+
+    display: block;
+
+    height: 64px;
+    width: auto;
+
+}
+
+.tab-ornament {
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 70px;
+    height: 64px;
+
+    background: url("../../assets/images/decor/ornament.svg") no-repeat left center;
+    background-position: 2px center;
+    background-size: auto 62px;
+
+    z-index: 2;
+
+}
+
+.side-tab {
+
+    position: relative;
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    overflow: hidden;
+
+    width: 70px;
+    height: 64px;
+
+}
+
+.tab-content {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding-left: 26px;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    color: white;
+
+}
+
+.side-tab-inner {
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 259px;
+    height: 64px;
+
+    transform: translateX(189px);
+
+    transition: transform .30s ease-out;
+
+}
+
+.side-tab:hover .side-tab-inner {
+
+    transform: translateX(0);
+
+}

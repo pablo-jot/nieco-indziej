@@ -1,0 +1,81 @@
+/* =====================================================
+   PODSTRONY
+   ===================================================== */
+
+main {
+
+    flex: 1;
+    background: var(--page-background);
+
+}
+
+.page-header {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 80px 40px 40px;
+
+}
+
+.page-header h1 {
+
+    color: var(--color-forest-dark);
+
+    font-family: var(--font-heading);
+
+    font-size: 3rem;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+}
+
+/* =====================================================
+   KARTA MUZYKA
+   ===================================================== */
+
+.musicians {
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 0 40px 80px;
+
+}
+
+.musician-card {
+
+    display: grid;
+
+    grid-template-columns: 360px 1fr;
+
+    gap: 80px;
+
+    align-items: start;
+
+}
+
+.musician-info img {
+
+    width: 140px;
+
+    display: block;
+
+    margin-bottom: 30px;
+
+}
+
+.musician-photo img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 12px;
+
+}

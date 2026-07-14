@@ -1,3 +1,5 @@
+@import url("page.css");
+
 html,
 body {
 
@@ -15,6 +17,8 @@ body {
 
 }
 
+
+
 /* =====================================================
    HEADER
    ===================================================== */
@@ -25,7 +29,8 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding: 1rem 2rem;
+    height: var(--header-height);
+    padding: 0 2rem;
 
     background-color: var(--menu-background);
 
@@ -73,12 +78,12 @@ footer {
     position: absolute;
 
     left: 50%;
-    bottom: 12px;
+    bottom: 24px;
 
     transform: translateX(-50%);
 
-    width: var(--sygnet-size);
-    height: var(--sygnet-size);
+    width: 130px;
+    height: 130px;
 
     z-index: 20;
 
@@ -96,7 +101,7 @@ main {
 
     flex: 1;
 
-    display: flex;
+    overflow-y: auto;
 
 }
 
@@ -104,25 +109,28 @@ main {
 .footer-right {
 
     position: absolute;
-    bottom: 0;
 
-    width: 220px;
-    height: 96px;
+    bottom: 12px;
+
+    width: var(--sygnet-size);
+    height: var(--sygnet-size);
 
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+
+    color: var(--menu-text);
 
 }
 
 .footer-left {
 
-    left: 0;
+    left: 12px;
 
 }
 
 .footer-right {
 
-    right: 0;
+    right: 12px;
     justify-content: flex-end;
 
 }
@@ -130,7 +138,157 @@ main {
 .footer-left svg,
 .footer-right svg {
 
-    height: 80px;
-    width: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+/* =====================================================
+   NEWSLETTER
+   ===================================================== */
+
+.footer-newsletter {
+
+    position: absolute;
+
+    left: 180px;
+    top: 16px;
+
+    color: var(--menu-text);
+
+}
+
+.footer-newsletter h3 {
+
+    margin: 0 0 8px;
+
+    font-family: var(--font-heading);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    color: var(--menu-text);
+
+}
+
+.newsletter-form {
+
+    display: flex;
+    align-items: stretch;
+
+    gap: 0;
+
+}
+
+.newsletter-form input {
+
+    width: 220px;
+
+    padding: 7px 14px;
+
+    color: var(--menu-text);
+
+    background: rgba(223, 205, 178, 0.10);
+
+    border: 1px solid rgba(223, 205, 178, 0.35);
+
+    border-radius: 6px 0 0 6px;
+
+    outline: none;
+
+}
+
+.newsletter-form input::placeholder {
+
+    color: var(--menu-text);
+
+    opacity: .65;
+
+}
+
+.newsletter-form button {
+
+    width: 48px;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--menu-text);
+
+    background: rgba(223, 205, 178, 0.10);
+
+    border: 1px solid rgba(223, 205, 178, 0.35);
+
+    border-radius: 0 6px 6px 0;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+    align-self: stretch;
+
+}
+
+.newsletter-form button:hover {
+
+    background: rgba(223, 205, 178, 0.20);
+
+    border-color: var(--menu-text);
+
+}
+
+
+/* =====================================================
+   KONTAKT
+   ===================================================== */
+
+.footer-contact {
+
+    position: absolute;
+
+    right: 180px;
+    top: 16px;
+
+    color: var(--menu-text);
+
+}
+
+.footer-contact p {
+
+    margin: 0;
+
+    color: var(--menu-text);
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+
+}
+
+.footer-contact span {
+
+    margin: 0 12px;
+
+    opacity: .6;
+
+}
+
+.footer-contact h3 {
+
+    margin: 0 0 10px;
+
+    font-size: 16px;
 
 }
