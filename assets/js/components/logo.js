@@ -25,6 +25,8 @@ export async function loadLogo(selector, file) {
 
     const response = await fetch(file);
 
+    console.log(response);
+
     console.log("status:", response.status);
 
     if (!response.ok) {
