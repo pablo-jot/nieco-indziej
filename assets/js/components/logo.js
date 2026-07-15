@@ -17,9 +17,8 @@ export async function loadLogo(selector, file) {
     console.log("container =", container);
 
     if (!container) {
-        console.error(`Nie znaleziono elementu: ${selector}`);
-        return;
-    }
+    return;
+}
 
     console.log("pobieram:", file);
 
