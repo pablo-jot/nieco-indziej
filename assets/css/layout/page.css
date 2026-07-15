@@ -11,11 +11,17 @@ main {
 
 .page-header {
 
+    display: flex;
+
+    align-items: center;
+
     max-width: 1400px;
 
     margin: 0 auto;
 
-    padding: 80px 40px 40px;
+    padding: 20px 40px 8px;
+
+    justify-content: flex-start;
 
 }
 
@@ -30,6 +36,17 @@ main {
     letter-spacing: 0.08em;
 
     text-transform: uppercase;
+
+}
+
+.page-header-image {
+
+    display: block;
+
+    height: 200px;
+    width: auto;
+
+    margin-left: 120;
 
 }
 
