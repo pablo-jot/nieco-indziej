@@ -69,14 +69,16 @@
 
 }
 .side-tab:hover .side-tab-inner,
-.side-tab:focus-visible .side-tab-inner {
+.side-tab:focus-visible .side-tab-inner,
+.side-tab.active .side-tab-inner {
 
     transform: translateX(0);
 
 }
 
 .side-tab:hover,
-.side-tab:focus-visible {
+.side-tab:focus-visible,
+.side-tab.active {
 
     filter: brightness(1.04);
 

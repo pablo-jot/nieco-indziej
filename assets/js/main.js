@@ -9,7 +9,7 @@ await loadLogo(
 
 await loadLogo(
     ".hero-logo",
-    "assets/images/logo/logo_NI_start.svg"
+    "assets/images/logo/logo_NI_start_v2.svg"
 );
 
 await loadLogo(

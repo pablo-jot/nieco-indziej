@@ -37,10 +37,10 @@
 
     position: absolute;
 
-    top: 50%;
+    top: 70%;
     left: 50%;
 
-    width: 750px;
+    width: 850px;
 
     transform: translate(-50%, -85%);
 
@@ -53,9 +53,14 @@
     width: 100%;
     height: auto;
 
-    filter:
+    /* filter:
 
-        drop-shadow(0 0 4px var(--menu-background)) drop-shadow(0 0 8px var(--menu-background)) drop-shadow(0 0 12px var(--menu-background));
+        drop-shadow(0 0 4px var(--menu-background)) drop-shadow(0 0 8px var(--menu-background)) drop-shadow(0 0 12px var(--menu-background)); */
+
+        filter:
+
+        drop-shadow(0 0 8px var(--menu-background));
+
 
 }
 
