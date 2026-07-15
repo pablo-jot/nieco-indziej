@@ -1,5 +1,10 @@
 export async function loadQuote() {
+    const quoteText = document.querySelector(".quote-text");
+    const quoteAuthor = document.querySelector(".quote-author");
 
+    if (!quoteText || !quoteAuthor) {
+        return;
+    }
     const response = await fetch("assets/data/quotes.json");
 
     const quotes = await response.json();
@@ -10,15 +15,15 @@ export async function loadQuote() {
 
     const author = document.querySelector(".quote-author");
 
-if (quote.title) {
+    if (quote.title) {
 
-    author.textContent =
-        `${quote.author} „${quote.title}”`;
+        author.textContent =
+            `${quote.author} „${quote.title}”`;
 
-} else {
+    } else {
 
-    author.textContent = quote.author;
+        author.textContent = quote.author;
 
-}
+    }
 
 }
