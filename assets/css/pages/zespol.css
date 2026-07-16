@@ -1,0 +1,175 @@
+/* ==========================================================
+   STRONA "O ZESPOLE"
+   ========================================================== */
+
+
+/* ==========================================================
+   UKŁAD STRONY
+   ========================================================== */
+
+.journey {
+
+    width: min(1400px, 100%);
+    margin: 80px auto 140px;
+    padding: 0 60px;
+
+}
+
+
+/* ==========================================================
+   KARTKA KRONIKI
+   ========================================================== */
+
+.story-stop {
+
+    position: relative;
+
+    margin-top: -20px;
+    margin-bottom: 120px;
+    margin-left: 120px;
+
+    padding: 64px 110px 84px 72px;
+
+    background: url("../../images/backgrounds/papier1.svg") no-repeat center;
+    background-size: 100% 100%;
+
+}
+
+.story-stop--right {
+
+    margin-left: auto;
+    margin-right: 120px;
+
+}
+
+
+/* ==========================================================
+   ROŻEK
+   ========================================================== */
+
+.story-stop::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 28px;
+    bottom: 24px;
+
+    width: 96px;
+    height: 96px;
+
+    background: url("../../images/decor/rozek_R_dark.svg") no-repeat center;
+    background-size: contain;
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   TYPOGRAFIA
+   ========================================================== */
+
+.story-stop h2 {
+
+    margin: 0 0 36px;
+
+    color: var(--color-forest-dark);
+
+    font-size: 2rem;
+
+}
+
+.story-stop p {
+
+    margin: 0 0 1.2rem;
+
+    color: var(--color-text);
+
+    line-height: 1.9;
+
+    text-align: justify;
+
+}
+
+
+/* ==========================================================
+   WARIANTY KARTEK
+   ========================================================== */
+
+.story-stop--paper1 {
+
+    width: 700px;
+    min-height: 420px;
+
+}
+
+.story-stop--paper2 {
+
+    width: 760px;
+    min-height: 480px;
+
+}
+
+.story-stop--paper3 {
+
+    width: 840px;
+    min-height: 500px;
+
+}
+
+.story-stop--paper4 {
+
+    width: 900px;
+    min-height: 520px;
+
+}
+
+.story-stop--paper5 {
+
+    width: 960px;
+    min-height: 540px;
+
+}
+
+
+/* ==========================================================
+   OBRÓT KARTEK
+   ========================================================== */
+
+.story-stop--flat {
+
+    transform: none;
+
+}
+
+.story-stop--r1 {
+
+    transform: rotate(0.20deg);
+
+}
+
+.story-stop--r2 {
+
+    transform: rotate(-0.25deg);
+
+}
+
+.story-stop--r3 {
+
+    transform: rotate(0.15deg);
+
+}
+
+.story-stop--r4 {
+
+    transform: rotate(-0.18deg);
+
+}
+
+.story-stop--r5 {
+
+    transform: rotate(0.30deg);
+
+}

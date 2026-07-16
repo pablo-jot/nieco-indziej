@@ -2,6 +2,7 @@
 import { loadLogo } from "./components/logo.js";
 import { loadQuote } from "./hero.js";
 
+
 await loadLogo(
     ".logo",
     "assets/images/logo/logo-okragle.svg"
@@ -9,8 +10,12 @@ await loadLogo(
 
 await loadLogo(
     ".hero-logo",
-    "assets/images/logo/logo_NI_start_v2.svg"
+    window.matchMedia("(max-width: 767px)").matches
+        ? "assets/images/logo/logo_NI_start_mobile.svg"
+        : "assets/images/logo/logo_NI_start_v2.svg"
 );
+
+
 
 await loadLogo(
     ".footer-sygnet",

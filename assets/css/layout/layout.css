@@ -298,3 +298,72 @@ body.home-page main {
     font-size: 16px;
 
 }
+
+/* =====================================================
+   LAYOUT - MOBILE
+   ===================================================== */
+
+@media (max-width: 767px) {
+
+    header,
+    footer {
+
+        display: none;
+
+    }
+    .mobile-menu-button {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 48px;
+        height: 48px;
+
+        padding: 0;
+
+        border: 0;
+        background: transparent;
+
+        color: var(--menu-text);
+
+        font-size: 2rem;
+
+        cursor: pointer;
+
+    }
+}
+
+/* =====================================================
+   MOBILE HEADER
+   ===================================================== */
+
+.mobile-header {
+
+    display: none;
+
+}
+
+@media (max-width: 767px) {
+
+    .mobile-header {
+
+        position: fixed;
+
+        top: 0;
+        left: 0;
+        right: 0;
+
+        height: 64px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding: 0 20px;
+
+        z-index: 1000;
+
+    }
+
+}

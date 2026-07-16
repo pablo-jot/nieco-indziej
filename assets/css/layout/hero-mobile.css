@@ -1,0 +1,44 @@
+/* =====================================================
+   HERO MOBILE
+   ===================================================== */
+
+@media (max-width: 767px) {
+
+    .hero {
+
+    background-image: url("../../images/mobile/hero-mobile.png");
+    background-position: center center;
+
+}
+
+    .hero-calendar,
+    .hero-quote {
+
+        display: none;
+
+    }
+
+        .hero-logo {
+
+        width: 450px;
+
+        top: 40%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+    }
+    .mobile-menu-button {
+
+        color: var(--color-forest-dark);
+
+    }
+
+        .side-tabs {
+
+        display: none;
+
+    }
+}
+
+    

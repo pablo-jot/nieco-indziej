@@ -1,0 +1,178 @@
+/* ==========================================================
+   STRONA "O ZESPOLE"
+   ========================================================== */
+
+.journey {
+
+    width: min(1400px, 100%);
+    margin: 80px auto 140px;
+    padding: 0 60px;
+
+}
+
+.story-stop {
+
+    width: 760px;
+
+    margin-left: 120px;
+    margin-bottom: 120px;
+    margin-top: -20px;
+
+    padding: 64px 110px 84px 72px;
+
+    background: url("../../images/backgrounds/papier1.svg") no-repeat center;
+    background-size: 100% 100%;
+
+    border: none;
+
+    position: relative;
+
+}
+
+.story-stop::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: var(--story-card-background);
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    -webkit-mask-image:
+        radial-gradient(circle at top left, transparent 0, black 28px),
+        radial-gradient(circle at top right, transparent 0, black 28px),
+        radial-gradient(circle at bottom left, transparent 0, black 28px),
+        radial-gradient(circle at bottom right, transparent 0, black 28px),
+        linear-gradient(black, black);
+
+    -webkit-mask-composite: source-over;
+
+    mask-image:
+        radial-gradient(circle at top left, transparent 0, black 28px),
+        radial-gradient(circle at top right, transparent 0, black 28px),
+        radial-gradient(circle at bottom left, transparent 0, black 28px),
+        radial-gradient(circle at bottom right, transparent 0, black 28px),
+        linear-gradient(black, black);
+
+    opacity: .75;
+
+}
+
+.story-stop::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 28px;
+    bottom: 24px;
+
+    width: 96px;
+    height: 96px;
+
+    background: url("../../images/decor/rozek_R_dark.svg") no-repeat center;
+
+    background-size: contain;
+
+    opacity: .95;
+
+    pointer-events: none;
+
+}
+
+.story-stop--right {
+
+    margin-left: auto;
+    margin-right: 120px;
+
+}
+
+.story-stop h2 {
+
+    margin: 0 0 36px;
+
+    color: var(--color-forest-dark);
+
+    font-size: 2rem;
+
+}
+
+.story-stop p {
+
+    color: var(--color-text);
+
+    line-height: 1.9;
+
+    text-align: justify;
+    max-width: 700px;
+    margin-bottom: 1.2rem;
+
+}
+
+/* ==========================================================
+   WARIANTY KARTEK
+   ========================================================== */
+
+/* ---------- Rozmiary ---------- */
+
+.story-stop--small {
+
+    width: 620px;
+
+}
+
+.story-stop--medium {
+
+    width: 760px;
+
+}
+
+.story-stop--large {
+
+    width: 900px;
+
+}
+
+
+/* ---------- Delikatne obroty ---------- */
+
+.story-stop--flat {
+
+    transform: none;
+
+}
+
+.story-stop--r1 {
+
+    transform: rotate(0.20deg);
+
+}
+
+.story-stop--r2 {
+
+    transform: rotate(-0.25deg);
+
+}
+
+.story-stop--r3 {
+
+    transform: rotate(0.15deg);
+
+}
+
+.story-stop--r4 {
+
+    transform: rotate(-0.18deg);
+
+}
+
+.story-stop--r5 {
+
+    transform: rotate(0.30deg);
+
+}
